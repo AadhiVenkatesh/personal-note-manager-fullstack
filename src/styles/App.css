@@ -1,0 +1,65 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note-form,
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.note-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-actions button {
+  margin-right: 10px;
+  background-color: #28a745;
+}
+
+.note-actions button:last-child {
+  background-color: #dc3545;
+}
+
+@media (min-width: 600px) {
+  .note-list {
+    justify-content: center;
+  }
+}
